@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
     uglify: {
       options: {
-        sourceMap: {}
+        sourceMap: true
       },
       lib: {
         files: {
@@ -67,6 +67,13 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
+      minify: {
+        expand: true,
+        cwd: './public/',
+        src: ['*.css', '!*.min.css'],
+        dest: './public/dist/',
+        ext: '.min.css'
+      }
     },
 
     watch: {
