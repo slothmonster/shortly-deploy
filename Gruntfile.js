@@ -56,7 +56,6 @@ module.exports = function(grunt) {
         './**/*.js'
       ],
       options: {
-        force: 'true',
         jshintrc: '.jshintrc',
         ignores: [
           'public/lib/**/*.js',
@@ -130,7 +129,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'concat', 'uglify', 'cssmin'
+    'jshint','concat', 'uglify', 'cssmin','mochaTest'
   ]);
 
   grunt.registerTask('upload', function(n) {
