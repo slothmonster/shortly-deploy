@@ -50,7 +50,7 @@ window.Shortly = Backbone.View.extend({
   render: function() {
     this.$el.html( this.template() );
     return this;
-  }
+  },
 
   shortenUrl: function(e) {
     e.preventDefault();
