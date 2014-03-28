@@ -27,11 +27,12 @@
     "grunt-nodemon": "^0.2.1",
     "grunt-mocha-test": "^0.10.0",
     "mongoose": "~3.8.8",
-    "bluebird": "1.0.8"
+    "bluebird": "1.0.8",
+    "request": "^2.34.0"
   },
   "engines": {
-  "node": "==0.10.26"
-},
+    "node": "==0.10.26"
+  },
   "devDependencies": {
     "supertest": "^0.10.0"
   }
