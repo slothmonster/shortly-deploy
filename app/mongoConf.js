@@ -1,7 +1,8 @@
 var Mongoose = require('mongoose');
 var path = require('path');
+var mongoURI = process.env.MONGO_DB_URI || 'mongodb://localhost/test';
+Mongoose.connect(mongoURI);
 
-Mongoose.connect('mongodb://localhost/test');
 var db = Mongoose.connection;
 
 // if there's an error connecting to the db
